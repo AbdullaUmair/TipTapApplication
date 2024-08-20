@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="TipTab-Admin">
+    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+    <meta name="author" content="TipTab-Admin">
+    <meta name="robots" content="noindex, nofollow">
+    <title>TipTab-Admin</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- animation CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div id="global-loader">
+        <div class="whirly-loader"> </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left active">
+                <a href="index.html" class="logo logo-normal">
+                    <img src="assets/img/MainLogo 1.png" alt="">
+                </a>
+                <a href="index.html" class="logo logo-white">
+                    <img src="assets/img/logo-white.png" alt="">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="assets/img/WhiteLogo.png" alt="" />
+
+                </a>
+                <a id="toggle_btn" href="javascript:void(0);">
+                    <i data-feather="chevrons-left" class="feather-16"></i>
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+            <!-- Header Menu -->
+            <ul class="nav user-menu">
+
+                <!-- Search -->
+                <li class="nav-item nav-searchinputs">
+                    <div class="top-nav-search">
+
+                        <a href="javascript:void(0);" class="responsive-search">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <form action="#">
+                            <div class="searchinputs">
+                                <input type="text" placeholder="Search">
+                                <div class="search-addon">
+                                    <span><i data-feather="search" class="feather-14"></i></span>
+                                </div>
+                            </div>
+                            <!-- <a class="btn"  id="searchdiv"><img src="assets/img/icons/search.svg" alt="img"></a> -->
+                        </form>
+                    </div>
+                </li>
+                <!-- /Search -->
+
+
+                <li class="nav-item nav-item-box">
+                    <a href="javascript:void(0);" id="btnFullscreen">
+                        <i data-feather="maximize"></i>
+                    </a>
+                </li>
+                <!-- Notifications -->
+                <li class="nav-item dropdown nav-item-box">
+                    <a href="javascript:void(0);"
+                       class="dropdown-toggle nav-link"
+                       data-bs-toggle="dropdown">
+                        <i data-feather="bell"></i><span class="badge rounded-pill">2</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar flex-shrink-0">
+                                                <img src="assets/img/Restaurant-Img/waiter1.jpg" />
+
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details">
+                                                    <span class="noti-title">New Order Notification</span><br />
+
+                                                    <span class="noti-title  text-muted">Alert when a new order is placed.</span><br />
+                                                    <span class="noti-title text-muted">Order details: items, quantities, and customer information.</span>
+                                                </p>
+                                                <p class="noti-time">
+                                                    <span class="notification-time">4 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar flex-shrink-0">
+                                                <img src="assets/img/Restaurant-Img/waiter2.jpg" />
+
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details">
+                                                    <span class="noti-title">Low Inventory Alerts</span><br />
+
+                                                    <span class="noti-title  text-muted">Notification for low stock levels of specific menu items</span>
+                                                </p>
+                                                <p class="noti-time">
+                                                    <span class="notification-time">6 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar flex-shrink-0">
+                                                <img src="assets/img/Restaurant-Img/waiter3.jpg" />
+
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details">
+                                                    <span class="noti-title">Employee Shift Reminders</span><br />
+                                                    <span class="noti-title text-muted">Reminders for upcoming employee shifts</span><br />
+
+                                                    <span class="noti-title text-muted">Notifications for any shift changes or updates</span>
+                                                </p>
+                                                <p class="noti-time">
+                                                    <span class="notification-time">8 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar flex-shrink-0">
+                                                <img src="assets/img/Restaurant-Img/waiter4.jpg" />
+
+
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details">
+                                                    <span class="noti-title">Menu Updates</span><br />
+
+                                                    <span class="noti-title text-muted">Details about new items, seasonal changes, or discontinued items</span>
+                                                </p>
+                                                <br /><p class="noti-time">
+                                                    <span class="notification-time">12 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar flex-shrink-0">
+                                                <img src="assets/img/Restaurant-Img/waiter5.jpg" />
+
+
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details">
+                                                    <span class="noti-title">VIP Customer Notifications</span><br />
+
+                                                    <span class="noti-title text-muted">Alerts for VIP or frequent customers entering the restaurant</span>
+                                                </p>
+                                                <p class="noti-time">
+                                                    <span class="notification-time">2 days ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="#">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Notifications -->
+
+                <li class="nav-item dropdown has-arrow main-drop">
+                    <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+                        <span class="user-info">
+
+                            <span class="user-detail">
+                                <span class="user-name text-white">Shafi</span>
+                                <span class="user-role text-white">Admin</span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu menu-drop-user">
+                        <div class="profilename">
+                            <div class="profileset">
+                                <span class="user-img">
+                                    <img src="assets/img/profiles/avator1.jpg" alt="">
+                                    <span class="status online"></span>
+                                </span>
+                                <div class="profilesets">
+                                    <h6>Najeeb</h6>
+                                    <h5>Admin</h5>
+                                </div>
+                            </div>
+                            <hr class="m-0">
+                            <a class="dropdown-item" href="profile.html"> <i class="me-2" data-feather="user"></i> My Profile</a>
+                            <a class="dropdown-item" href="generalsettings.html"><i class="me-2" data-feather="settings"></i>Settings</a>
+                            <hr class="m-0">
+                            <a class="dropdown-item logout pb-0" href="signin.html"><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- /Header Menu -->
+            <!-- Mobile Menu -->
+            <div class="dropdown mobile-user-menu">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="generalsettings.html">Settings</a>
+                    <a class="dropdown-item" href="signin.html">Logout</a>
+                </div>
+            </div>
+            <!-- /Mobile Menu -->
+        </div>
+        <!-- Header -->
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="submenu-open">
+                            <ul>
+                                <li class="active">
+                                    <a href="index.html"><i data-feather="grid"></i><span>Dashboard</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="submenu-open">
+                            <ul>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i data-feather="list"></i>  <span>Menu</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul class="item_list">
+                                        <li><a href="RestaurantItemsList.html">Items</a></li>
+                                        <li><a href="addRestaurantItems.html">Signature Item</a></li>
+                                        <li><a href="addStarterList.html">Starters</a></li>
+                                        <li><a href="addSoupList.html">Soups</a></li>
+                                        <li><a href="addQuickBitesList.html">Quick Bites</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="submenu-open">
+                            <ul>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i data-feather="percent"></i>   <span>Offers & Discounts</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul class="item_list">
+                                        <li><a href="addRestaurantDiscount.html">Restaurant</a></li>
+                                        <li><a href="">Item </a></li>
+                                        <li><a href="signatureDiscount.html">Signature Item</a></li>
+                                        <li><a href="starterDiscount.html">Starters </a></li>
+                                        <li><a href="soupDiscount.html">Soups</a></li>
+                                        <li><a href="quickBitesDiscount.html">Quick Bites</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="submenu-open">
+
+                            <ul>
+                                <li class="">
+                                    <a href="addSignatureList.html">
+                                        <i data-feather="check-square"></i>
+                                        <span>Signature Items List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu-open">
+
+                            <ul>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i data-feather="users"></i><span>Manage Users</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="addStaff.html">New User </a></li>
+                                        <li><a href="addStaffList.html">User List</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu-open">
+
+                            <ul>
+                                <li class="">
+                                    <a href="addcustomerreviews.html">
+                                        <i data-feather="users"></i><span>Customer Reviews</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu-open">
+
+                            <ul>
+                                <li class="">
+                                    <a href="addBusinessHours.html">
+                                        <i data-feather="clock"></i><span>Business Hours</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu-open">
+                            <ul>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i data-feather="settings"></i><span>Settings</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="generalsettings.html">General Settings</a>
+                                        </li>
+                                        <!--<li><a href="emailsettings.html">Email Settings</a></li>
+                                        <li>
+                                        <a href="paymentsettings.html">Payment Settings</a>
+                                        </li>
+                                        <li>
+                                        <a href="currencysettings.html">Currency Settings</a>
+                                        </li>
+                                        <li>
+                                        <a href="grouppermissions.html">Group Permissions</a>
+                                        </li>
+                                        <li><a href="taxrates.html">Tax Rates</a></li>-->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="signin.html" class="mt-4">
+                                        <i data-feather="log-out"></i><span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h4>Signature Items List</h4>
+                        <h6>Manage your Items</h6>
+                    </div>
+                    <div class="page-btn">
+                        <a role="button"  onclick="additem();" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img" class="me-1"> Signature Items</a>
+                    </div>
+                </div>
+
+                <!-- /add -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-top">
+                            <div class="search-set">
+                                <div class="search-path">
+                                    <a class="btn btn-filter" id="filter_search">
+                                        <img src="assets/img/icons/filter.svg" alt="img">
+                                        <span><img src="assets/img/icons/closes.svg" alt="img"></span>
+                                    </a>
+                                </div>
+                                <div class="search-input">
+                                    <a class="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img"></a>
+                                </div>
+                            </div>
+                            <div class="wordset">
+                                <ul>
+                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img"></a>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img"></a>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Filter -->
+                        <div class="card" id="filter_inputs">
+                            <div class="card-body pb-0">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Signature Item Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Signature Item Description">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 col-sm-6 col-12 ms-auto">
+                                        <div class="form-group">
+                                            <a class="btn btn-filters ms-auto"><img src="assets/img/icons/search-whites.svg" alt="img"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Filter -->
+                        <div class="table-responsive">
+                            <table class="table datanew">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label class="checkboxs">
+                                                <input type="checkbox" id="select-all">
+                                                <span class="checkmarks"></span>
+                                            </label>
+                                        </th>
+                                        <th>Image</th>
+                                        <th>Item Name</th>
+                                        <th>Restaurant Name</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="SignatureitemList">
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /add -->
+            </div>
+        </div>
+    </div>
+    <!-- /Main Wrapper -->
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/serverCode/SignatureList.js"></script>
+    <script src="assets/serverCode/AddSignature.js"></script>
+    <script>
+        async function additem(){
+            localStorage.removeItem('localstore-item-signature');
+            window.location.href = 'addRestaurantItems.html';          
+        }
+        
+    </script>
+
+    <!-- Feather Icon JS -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Datatable JS -->
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Sweetalert 2 -->
+    <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+    <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/serverCode/SignatureList.js"></script>
+</body>
+</html>

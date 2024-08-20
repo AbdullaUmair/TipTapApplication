@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="TipTab-Admin">
+    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+    <meta name="author" content="TipTab-Admin">
+    <meta name="robots" content="noindex, nofollow">
+    <title>TipTab-Admin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favlogo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- animation CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div id="global-loader">
+        <div class="whirly-loader"> </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left active">
+                <a href="index.html" class="logo logo-normal">
+                    <img src="assets/img/MainLogo 1.png" alt="">
+                </a>
+                <a href="index.html" class="logo logo-white">
+                    <img src="assets/img/logo-white.png" alt="">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="assets/img/WhiteLogo.png" alt="" />
+                </a>
+                <a id="toggle_btn" href="javascript:void(0);">
+                    <i data-feather="chevrons-left" class="feather-16"></i>
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+            <!-- Header Menu -->
+            <ul class="nav user-menu">
+                <li class="nav-item nav-searchinputs">
+                    <div class="top-nav-search">
+                        <span class="restaurantName text-white"></span>
+
+
+                    </div>
+                </li>
+                <!-- Search -->
+                <li class="nav-item nav-searchinputs">
+                    <div class="top-nav-search">
+
+                        <a href="javascript:void(0);" class="responsive-search">
+                            <i class="fa fa-search"></i>
+                        </a>
+
+                    </div>
+                </li>
+                <!-- /Search -->
+
+
+                <li class="nav-item nav-item-box">
+                    <a href="javascript:void(0);" id="btnFullscreen">
+                        <i data-feather="maximize"></i>
+                    </a>
+                </li>
+                <!-- Notifications -->
+                <li class="nav-item dropdown nav-item-box">
+                    <a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i data-feather="bell"></i><span class="badge rounded-pill"></span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Notifications -->
+
+                <li class="nav-item dropdown has-arrow main-drop">
+                    <a href="javascript:void(0);"
+                       class="dropdown-toggle nav-link userset"
+                       data-bs-toggle="dropdown">
+                        <span class="user-info">
+                            <span class="user-detail">
+                                <span class="text-white user-name"></span>
+                                <span class="text-white user-role"></span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu menu-drop-user">
+                        <div class="profilename">
+                            <div class="profileset">
+                                <div class="profilesets">
+                                    <h6 class="user-name text-white"></h6>
+                                    <h5 class="user-role text-white"></h5>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="me-2" data-feather="user"></i> My Profile
+                            </a>
+                            <a class="dropdown-item" href="#"><i class="me-2" data-feather="settings"></i>Settings</a>
+                            <hr class="m-0" />
+                            <a class="dropdown-item logout pb-0" onclick="logOut()">
+                                <img src="assets/img/icons/log-out.svg"
+                                     class="me-2"
+                                     alt="img" />Logout
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- /Header Menu -->
+            <!-- Mobile Menu -->
+            <div class="dropdown mobile-user-menu">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="generalsettings.html">Settings</a>
+                    <a class="dropdown-item" href="signin.html">Logout</a>
+                </div>
+            </div>
+            <!-- /Mobile Menu -->
+        </div>
+        <!-- Header -->
+       <!-- Sidebar -->
+ <div class="sidebar" id="sidebar">
+    <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+                <li class="submenu-open">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html"><i data-feather="grid"></i><span>Dashboard</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="submenu-open">
+                    <ul>
+                        <li class="submenu">
+                            <a href="#">
+                                <i data-feather="list"></i>  <span>Menu</span><span class="menu-arrow"></span>
+                            </a>
+                            <ul class="item_list">
+                                <li><a href="addRestaurantItems.html">Items</a></li>
+                                <li><a href="addsignatureDish.html">Signature Item</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="submenu-open">
+                    <ul>
+                        <li class="submenu">
+                            <a href="javascript:void(0);">
+                                <i data-feather="percent"></i><span>Offers & Discounts </span><span class="menu-arrow"></span>
+                            </a>
+                            <ul class="item_list">
+                                <li><a href="AddRestaurantOffer.html">Restaurant</a></li>
+                                <li><a href="restaurantOffers.html">Restaurant Offers List </a></li>
+                                <!-- <li><a href="UpdateItemDiscount.html">Item </a></li>
+                                <li><a href="signatureDiscount.html">Signature Item</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="submenu-open">
+                  <ul>
+                      <li class="submenu">
+                          <a href="javascript:void(0);">
+                              <i data-feather="list"></i><span>Items List</span><span class="menu-arrow"></span>
+                          </a>
+                          <ul class="item-list-count">
+                            <li><a href="appetizers.html">Appetizers</a><span class="appetizerCountValue"></span></li>
+                            <li><a href="soups.html">Soups</a><span class="soupCountDisplay"></span></li>
+                            <li><a href="salads.html">Salads</a><span class="saladCountValue"></span></li>
+                            <li><a href="mainCourses.html">Main Courses</a><span class="mCourseCountValue"></span></li>
+                            <li><a href="desserts.html">Desserts</a><span class="dessertCountValue"></span></li>
+                            <li><a href="beverages.html">Beverages</a><span class="beverageCountValue"></span></li>
+                            <li><a href="breadbakery.html">Bread/Bakery</a><span class="bakeryCountValue"></span></li>
+                            <li><a href="signatureList.html">Signature Items</a><span class="signatureCountDisplay"></span></li>
+                            <li><a href="RestaurantItemsList.html">Items</a><span class="itemCountSidebar"></span></li>
+                        </ul>
+                      </li>
+                  </ul>
+              </li>
+                <li class="submenu-open">
+
+                    <ul>
+                        <li class="submenu">
+                            <a href="javascript:void(0);">
+                                <i data-feather="users"></i><span>Manage Waiters</span><span class="menu-arrow"></span>
+                            </a>
+                            <ul>
+                                <li><a href="waiterRegistration.html">Add Waiter </a></li>
+                                <li><a href="addwaiterList.html">Waiter List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+              
+                <li class="submenu-open">
+
+                    <ul>
+                        <li class="">
+                            <a href="addCustomerReviews.html">
+                                <i data-feather="users"></i><span>Customer reviews</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu-open">
+
+                    <ul>
+                        <li class="">
+                            <a href="addBuisinessHrs.html">
+                                <i data-feather="clock"></i><span>Business Hours</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu-open">
+                    <ul>
+                        <li class="submenu">
+                            <a href="javascript:void(0);">
+                                <i data-feather="settings"></i><span>Settings</span><span class="menu-arrow"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="generalsettings.html">General Settings</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="signin.html" class="mt-4">
+                                <i data-feather="log-out"></i><span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h4>Add Items</h4>
+                        <h6>Manage your Items</h6>
+                    </div>
+                    <!--<div class="page-btn">
+                        <a href="addRestaurantItems.html" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img" class="me-1">Add Restaurants</a>
+                    </div>-->
+                </div>
+
+                <!-- /add -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 col-12">
+
+                                <div class="form-group">
+                                    <label>Select Category</label>
+                                    <select id="CategoryID" class="select"></select>
+
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Item Title</label>
+                                    <input type="text" id="ItemTitle">
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label>Cuisine</label>
+                                    <input type="text" id="CusineTitle">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <input type="text" id="Description">
+                                </div>
+
+                                <div class="form-group my-4">
+                                    <label> Disable</label>
+                                    <input type="checkbox" class="checkboxs" id="Disable">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label>	Offer Image</label>
+                                    <div class="image-upload image-upload-new ">
+                                        <input type="file" onchange="handleImageUpload()" id="item-image">
+                                        <div class="image-uploads ">
+                                            <img src="assets/img/icons/upload.svg" id="imagePreview" alt="img">
+                                            <h4>Drag and drop a file to upload</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-12">
+                                <a role="button" id="BtnSubmit" class="btn btn-submit me-2">ADD</a>
+
+                                <a href="index.html" class="btn btn-cancel">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+ <!-- jQuery -->
+ <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+ <!-- Feather Icon JS -->
+ <script src="assets/js/feather.min.js"></script>
+
+ <!-- Slimscroll JS -->
+ <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+ <!-- Datatable JS -->
+ <script src="assets/js/jquery.dataTables.min.js"></script>
+ <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+
+ <!-- Bootstrap Core JS -->
+ <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Select2 JS -->
+ <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+ <!-- Sweetalert 2 -->
+ <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+ <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+
+ <!-- Custom JS -->
+ <script src="assets/serverCode/RestaurantDiscount.js"></script>
+  <script src="assets/serverCode/Index.js"></script>
+  <script src="assets/serverCode/addItem.js"></script>
+ <script src="assets/serverCode/allItemCount.js"></script>
+ <script src="assets/serverCode/itemListCount.js"></script>
+ <script src="assets/serverCode/logOut.js"></script>
+ <script src="assets/js/script.js"></script>
+</body>
+</html>
